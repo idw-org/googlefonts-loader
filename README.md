@@ -1,4 +1,4 @@
-##googlefonts-loader
+# googlefonts-loader
 
 This module uses webfontloader internally.  What it adds is dedupe functionality of loaded fonts.  Which means it won't load a font that is already loaded.
 
