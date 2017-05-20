@@ -4,5 +4,8 @@
   "description": "uses webfont-loader internal, but skips loading font when font is already downloaded.  Good for multiple components using the same font.",
   "main": "lib/index.js",
   "author": "Chris <thisguychriz@gmail.com> (https://github.com/thisguychris)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webfontloader": "^1.6.27"
+  }
 }
