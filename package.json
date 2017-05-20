@@ -5,7 +5,42 @@
   "main": "lib/index.js",
   "author": "Chris <thisguychriz@gmail.com> (https://github.com/thisguychris)",
   "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged",
+    "format": "prettier --single-quote --no-semi --trailing-comma none --write \"src/**/*.js\"",
+    "start": "micro src/index.js",
+    "lint": "xo"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "xo",
+        "prettier --single-quote --no-semi --trailing-comma none --write",
+        "git add"
+      ]
+    }
+  },
+  "xo": {
+    "rules": {
+      "capitalized-comments": 0,
+      "eqeqeq": 0,
+      "camelcase": 0
+    },
+    "ignores": [
+      "*.js"
+    ],
+    "extends": "prettier"
+  },
   "dependencies": {
     "webfontloader": "^1.6.27"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "eslint-config-prettier": "^2.1.1",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.2",
+    "prettier": "^1.3.1",
+    "xo": "^0.18.2"
   }
 }
