@@ -29,6 +29,10 @@
     "ignores": [
       "*.js"
     ],
+    "env": [
+      "browser",
+      "node"
+    ],
     "extends": "prettier"
   },
   "dependencies": {
