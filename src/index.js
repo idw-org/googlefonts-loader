@@ -8,9 +8,9 @@ const load = fonts =>
   })
 
 const fontCheck = string => {
-  let arr = string.split(/:|,/)
+  const arr = string.split(/:|,/)
   let family = arr[0]
-  let variants = arr.slice(1)
+  const variants = arr.slice(1)
 
   return variants.reduce((isLoaded, variant) => {
     if (variant.indexOf('italic') >= 0) {
