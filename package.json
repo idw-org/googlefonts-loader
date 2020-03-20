@@ -37,13 +37,14 @@
     "extends": "prettier"
   },
   "dependencies": {
-    "babel-runtime": "^6.23.0",
+    "@babel/runtime-corejs2": "^7.0.0",
     "webfontloader": "^1.6.27"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.4.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "eslint-config-prettier": "^2.1.1",
     "husky": "^0.13.3",
     "lint-staged": "^3.4.2",
